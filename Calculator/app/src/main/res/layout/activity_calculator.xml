@@ -20,7 +20,8 @@
             android:id="@+id/firstInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="First Input"/>
+            android:hint="First Input"
+            android:text="" />
         <LinearLayout
             android:id="@+id/operationLayout"
             android:layout_width="match_parent"
@@ -70,7 +71,7 @@
             android:id="@+id/operation_extra1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="func1"/>
+            android:text="e^(First Input)"/>
         <Button
             android:id="@+id/operation_extra2"
             android:layout_width="wrap_content"
@@ -82,6 +83,16 @@
             android:layout_height="wrap_content"
             android:text="func3"/>
 
-
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Answer"
+        android:id="@+id/answerCal"
+        android:layout_above="@+id/SimpleCalcLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp" />
+
 </RelativeLayout>
